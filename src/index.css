@@ -1,17 +1,17 @@
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Fira Code', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Fira Code', 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #282C33!important;
+  background: #282c33 !important;
 }
 
 code {
@@ -20,9 +20,9 @@ code {
 }
 
 :root {
-  --color-text-primary: #ABB2BF;
-  --color-accent: #C778DD;
-  --color-background: #282C33;
+  --color-text-primary: #abb2bf;
+  --color-accent: #c778dd;
+  --color-background: #282c33;
   --color-yt-channel-background: #3a404a;
 }
 
@@ -48,15 +48,15 @@ blockquote {
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-	padding: 0;
-	margin: 0;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
   object-fit: contain;
 }
 
 .offset-section {
-  scroll-margin-top: 64px; 
+  scroll-margin-top: 64px;
 }
 
 .active-anchor-link {
@@ -188,13 +188,13 @@ img {
 
 @media screen and (min-width: 1024px) {
   .hero-block {
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
   }
 
   .my-photo-container {
-  margin-top: 2.5rem;
-  text-align: center;
-}
+    margin-top: 2.5rem;
+    text-align: center;
+  }
 
   .working-on-container {
     text-align: center;
@@ -228,14 +228,18 @@ img {
   width: auto;
 }
 
-.figure-quote::before, .figure-quote::after {
+.figure-quote::before,
+.figure-quote::after {
   content: '"';
   position: absolute;
   font-size: 64px;
   font-weight: 700;
   background-repeat: no-repeat;
   background-size: 100% 40%;
-  background-image: linear-gradient(var(--color-background), var(--color-background));
+  background-image: linear-gradient(
+    var(--color-background),
+    var(--color-background)
+  );
 }
 
 .figure-quote::before {
@@ -250,7 +254,7 @@ img {
 
 @media screen and (min-width: 1024px) {
   .quote-block {
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
   }
 
   .figure-quote {
@@ -276,8 +280,8 @@ img {
 }
 
 .iframe {
- aspect-ratio: 16 / 9;
- width: 100%;
+  aspect-ratio: 16 / 9;
+  width: 100%;
 }
 
 /* tech stack icons */
@@ -292,25 +296,25 @@ img {
 @media screen and (min-width: 640px) {
   .iframe {
     width: 95%;
-   }
+  }
 }
 
 @media screen and (min-width: 768px) {
   .iframe {
     width: 90%;
-   }
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .iframe {
     width: 80%;
-   }
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .iframe {
     width: 85%;
-   }
+  }
 }
 
 /* about me */
@@ -333,7 +337,7 @@ img {
 .zoom:hover {
   -ms-transform: scale(1.05); /* IE 9 */
   -webkit-transform: scale(1.05); /* Safari 3-8 */
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .typed-container {
@@ -349,10 +353,14 @@ img {
   animation-timing-function: steps(50, end);
   animation-fill-mode: forwards;
 }
-  
+
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .digital-art-borealis {
@@ -381,7 +389,8 @@ img {
   height: 100px;
 }
 
-.loader:before , .loader:after{
+.loader:before,
+.loader:after {
   content: '';
   border-radius: 50%;
   position: absolute;
@@ -394,6 +403,10 @@ img {
 }
 
 @keyframes rotate {
-  0% {  transform: rotate(0)}
-  100% { transform: rotate(360deg)}
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

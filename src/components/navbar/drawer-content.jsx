@@ -1,37 +1,52 @@
-import React from "react";
-import { StyledContainer } from "../../styled/app.styled";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { getComponentsWithMargin } from "../../utils/withMargin.jsx";
-import { getNavbarLinks } from "../../utils/navbarLinks";
-import { Box, Typography } from "@mui/material";
-import Socials from "../icons/socials";
-import { PatternSharp } from "@mui/icons-material";
+import React from 'react'
+import { StyledContainer } from '../../styled/app.styled'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { getComponentsWithMargin } from '../../utils/withMargin.jsx'
+import { getNavbarLinks } from '../../utils/navbarLinks'
+import { Box, Typography } from '@mui/material'
+import Socials from '../icons/socials'
+import { PatternSharp } from '@mui/icons-material'
 
 const DrawerContent = ({ onHandleDrawerClose }) => {
-  const links = getComponentsWithMargin([...getNavbarLinks()], 3.2);
-  const { pathname } = useLocation();
+  const links = getComponentsWithMargin([...getNavbarLinks()], 3.2)
+  const { pathname } = useLocation()
 
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const handleSectionJump = (content) => {
     // pathname === "/home"
     // ? `#${link.content}`
     // : `/home#${link.content}`
 
-    let path = "";
-    if (pathname === "/home") path = content;
-    else path = `/home#${content}`;
+    // let path = ''
+    // if (pathname === '/home') path = content
+    // else
+    const path = `/home#${content}`
+    console.log('path', path)
 
-    navigate(path, { replace: true });
-  };
+    navigate(path, { replace: true })
+  }
 
   return (
     <Box className="flex-y flex-space-between" height="80vh" mt="3.2rem">
       <StyledContainer className="flex-y">
-        {links.map(({ content }, index) => (
-          <Typography onClick={() => handleSectionJump(content)}>
-            {content}
-          </Typography>
+        {links.map((link, index) => (
+          <a
+            key={index}
+            style={{
+              marginBottom: link.margin,
+            }}
+            href={
+              pathname === '/home'
+                ? `#${link.content}`
+                : `/home#${link.content}`
+            }
+            onClick={onHandleDrawerClose}
+            className="navbar-link"
+          >
+            <span className="accent-text">#</span>
+            {link.content}
+          </a>
         ))}
       </StyledContainer>
       <Box className="flex flex-center">
@@ -55,10 +70,10 @@ const DrawerContent = ({ onHandleDrawerClose }) => {
         />
       </Box>
     </Box>
-  );
-};
+  )
+}
 
-export default DrawerContent;
+export default DrawerContent
 
 {
   /* <a

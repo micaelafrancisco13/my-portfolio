@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react'
 import {
   getProjectDetails,
   getOtherProjects,
-} from "../../../utils/projectDetails";
-import { Grid, Typography } from "@mui/material";
-import ProjectCard from "./project-card";
-import theme from "../../../theme/main";
+} from '../../../utils/projectDetails'
+import { Grid, Typography } from '@mui/material'
+import ProjectCard from './project-card'
+import theme from '../../../theme/main'
 
 const AllProjects = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: 'smooth' })
 
-  const projectDetails = [...getProjectDetails()];
-  const otherProjects = [...getOtherProjects()];
+  const projectDetails = [...getProjectDetails()]
+  const otherProjects = [...getOtherProjects()]
 
   return (
     <>
@@ -43,7 +43,7 @@ const AllProjects = () => {
         ))}
       </Grid>
     </>
-  );
-};
+  )
+}
 
-export default AllProjects;
+export default AllProjects

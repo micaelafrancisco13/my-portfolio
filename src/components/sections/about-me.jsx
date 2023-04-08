@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Box,
   Fade,
@@ -6,31 +6,33 @@ import {
   Slide,
   Typography,
   useMediaQuery,
-} from "@mui/material";
-import { StyledLine } from "../../styled/sections/projects/projects.styled";
-import theme from "../../theme/main";
-import Avatar from "../../images/yt-channels/avatar";
-import { getYtChannels } from "../../utils/yt-channels";
-import { useInView } from "react-intersection-observer";
+} from '@mui/material'
+import { StyledLine } from '../../styled/sections/projects/projects.styled'
+import theme from '../../theme/main'
+import Avatar from '../../images/yt-channels/avatar'
+import { getYtChannels } from '../../utils/yt-channels'
+import { useInView } from 'react-intersection-observer'
 
 const AboutMe = ({ aboutMeRef }) => {
-  const smallAndLarger = useMediaQuery(theme.breakpoints.up("sm"));
-  const largeAndLarger = useMediaQuery(theme.breakpoints.up("lg"));
-  const ytChannels = [...getYtChannels()];
-  const { ref: channelsRef, inView: areChannelsInView } = useInView();
-  const { ref: digitalArtRef, inView: isDigitalArtInView } = useInView();
+  const smallAndLarger = useMediaQuery(theme.breakpoints.up('sm'))
+  const largeAndLarger = useMediaQuery(theme.breakpoints.up('lg'))
+  const ytChannels = [...getYtChannels()]
+  const { ref: channelsRef, inView: areChannelsInView } = useInView()
+  const { ref: digitalArtRef, inView: isDigitalArtInView } = useInView()
 
   const digitalArtComponent = (
     <img
       className="digital-art-borealis"
-      src={require("../../images/dall-e-image.png")}
+      src={require('../../images/dall-e-image.png')}
       alt="Digital art of a woman sitting on a computer chair with her laptop, outside, overlooking the Auora Borealis above her"
     />
-  );
+  )
 
   return (
     <Box
-      mb={{ xs: "10rem", lg: "14rem", xl: "16rem", xxl: "25rem" }}
+      // mb={{ xs: "10rem", lg: "14rem", xl: "16rem", xxl: "25rem" }}
+      mb={{ xs: '10rem', lg: '14rem', xl: '18rem', xxl: '22rem' }}
+      sx={{ height: { lg: '100vh' } }}
       component="section"
     >
       <Grid container>
@@ -109,10 +111,10 @@ const AboutMe = ({ aboutMeRef }) => {
         </Grid>
       </Grid>
     </Box>
-  );
-};
+  )
+}
 
-export default AboutMe;
+export default AboutMe
 
 {
   /* <Typography>

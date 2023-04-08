@@ -1,43 +1,45 @@
-import React from "react";
-import { Box, Grid, Typography, Zoom, useMediaQuery } from "@mui/material";
-import { getTechStacks } from "../../../utils/techStacks";
-import { StyledLine } from "../../../styled/sections/projects/projects.styled";
-import DotsBox from "../../shapes/dots-box";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import theme from "../../../theme/main";
-import _ from "lodash";
-import OutlinedBox from "../../shapes/outlined-box";
-import WeirdShape from "../../shapes/weird-shape";
-import IndividualTechStack from "./individual-tech-stack";
-import { useInView } from "react-intersection-observer";
+import React from 'react'
+import { Box, Grid, Typography, Zoom, useMediaQuery } from '@mui/material'
+import { getTechStacks } from '../../../utils/techStacks'
+import { StyledLine } from '../../../styled/sections/projects/projects.styled'
+import DotsBox from '../../shapes/dots-box'
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
+import theme from '../../../theme/main'
+import _ from 'lodash'
+import OutlinedBox from '../../shapes/outlined-box'
+import WeirdShape from '../../shapes/weird-shape'
+import IndividualTechStack from './individual-tech-stack'
+import { useInView } from 'react-intersection-observer'
 
 const TechStacks = ({ techStackRef }) => {
-  const smallAndLarger = useMediaQuery(theme.breakpoints.up("sm"));
-  const largeAndLarger = useMediaQuery(theme.breakpoints.up("lg"));
+  const smallAndLarger = useMediaQuery(theme.breakpoints.up('sm'))
+  const largeAndLarger = useMediaQuery(theme.breakpoints.up('lg'))
 
-  let techStacks = _.sortBy(getTechStacks(), "showPriority");
-  if (largeAndLarger) techStacks = _.sortBy(getTechStacks(), "inLayout");
+  let techStacks = _.sortBy(getTechStacks(), 'showPriority')
+  if (largeAndLarger) techStacks = _.sortBy(getTechStacks(), 'inLayout')
 
-  const INITIAL_TIMEOUT = 500;
-  let timeout = INITIAL_TIMEOUT;
+  const INITIAL_TIMEOUT = 500
+  let timeout = INITIAL_TIMEOUT
   techStacks = techStacks.map((stack) => {
-    stack.timeout = timeout;
-    timeout += INITIAL_TIMEOUT;
-    return stack;
-  });
+    stack.timeout = timeout
+    timeout += INITIAL_TIMEOUT
+    return stack
+  })
 
-  const { ref: techStacksRef, inView: areAllTechStacksInView } = useInView();
+  const { ref: techStacksRef, inView: areAllTechStacksInView } = useInView()
 
   return (
     <Box
-      mb={{ xs: "10rem", lg: "13rem", xl: "16rem", xxl: "23rem" }}
+      // mb={{ xs: "10rem", lg: "13rem", xl: "16rem", xxl: "23rem" }}
+      mb={{ xs: '10rem', lg: '14rem', xl: '18rem', xxl: '22rem' }}
+      sx={{ height: { lg: '100vh' } }}
       component="section"
     >
       <Box className="flex flex-y-center">
         <Typography
           variant="h2"
           fontWeight="500"
-          mb={{ xs: "1.3rem", lg: 0 }}
+          mb={{ xs: '1.3rem', lg: 0 }}
           className="offset-section"
           id="tech-stacks"
           ref={techStackRef}
@@ -51,7 +53,7 @@ const TechStacks = ({ techStackRef }) => {
           <DotsBox />
         </Box>
       )}
-      <Grid container spacing="1.6rem" mt={{ xs: 0, lg: "3.2rem" }}>
+      <Grid container spacing="1.6rem" mt={{ xs: 0, lg: '3.2rem' }}>
         {largeAndLarger && (
           <Grid item lg={5}>
             <Grid container>
@@ -97,12 +99,12 @@ const TechStacks = ({ techStackRef }) => {
                       {...(areAllTechStacksInView ? { timeout } : {})}
                     >
                       <Box
-                        mb={index !== techStacks.length - 1 ? "1.6rem" : "0"}
+                        mb={index !== techStacks.length - 1 ? '1.6rem' : '0'}
                         mr={{
                           lg:
                             index !== techStacks.length - 1 && index !== 2
-                              ? "1.6rem"
-                              : "0",
+                              ? '1.6rem'
+                              : '0',
                         }}
                       >
                         <IndividualTechStack
@@ -120,7 +122,7 @@ const TechStacks = ({ techStackRef }) => {
         </Grid>
       </Grid>
     </Box>
-  );
-};
+  )
+}
 
-export default TechStacks;
+export default TechStacks

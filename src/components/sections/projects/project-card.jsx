@@ -1,25 +1,25 @@
-import React from "react";
-import { Box, CardMedia, Typography, useMediaQuery } from "@mui/material";
+import React from 'react'
+import { Box, CardMedia, Typography, useMediaQuery } from '@mui/material'
 import {
   StyledCard,
   StyledCardActions,
   StyledCardButton,
   StyledPrivateRepoButton,
   StyledProjectDescription,
-} from "../../../styled/sections/projects/project-card.styled";
-import useModal from "../../hooks/useModal";
-import ModalPopup from "../../common/modal";
-import theme from "../../../theme/main";
+} from '../../../styled/sections/projects/project-card.styled'
+import useModal from '../../hooks/useModal'
+import ModalPopup from '../../common/modal'
+import theme from '../../../theme/main'
 
 const ProjectCard = ({ project, preview }) => {
   const { name, screenshot, description, techStacks, videoId, live, github } =
-    project;
-  const [toggleModal, handleModalOpen, handleModalClose] = useModal();
-  const smallAndAbove = useMediaQuery(theme.breakpoints.up("sm"));
-  const largeAndAbove = useMediaQuery(theme.breakpoints.up("lg"));
+    project
+  const [toggleModal, handleModalOpen, handleModalClose] = useModal()
+  const smallAndAbove = useMediaQuery(theme.breakpoints.up('sm'))
+  const largeAndAbove = useMediaQuery(theme.breakpoints.up('lg'))
 
   return (
-    <Box className={largeAndAbove && "/all-projects" ? "zoom" : ""}>
+    <Box className={largeAndAbove && '/all-projects' ? 'zoom' : ''}>
       <StyledCard elevation={0}>
         {screenshot && (
           <CardMedia
@@ -32,7 +32,7 @@ const ProjectCard = ({ project, preview }) => {
         <Box>
           <Box
             className="flex flex-wrap tech-stacks-container"
-            borderTop={!screenshot && "none"}
+            borderTop={!screenshot && 'none'}
           >
             {techStacks.map((stack, index) => (
               <Typography key={index}>{stack}</Typography>
@@ -69,7 +69,7 @@ const ProjectCard = ({ project, preview }) => {
                   rel="noreferrer"
                   href={github}
                 >
-                  GitHub =>
+                  {`GitHub =>`}
                 </StyledCardButton>
               ) : (
                 <StyledPrivateRepoButton
@@ -79,7 +79,7 @@ const ProjectCard = ({ project, preview }) => {
                   rel="noreferrer"
                   href={github}
                 >
-                  {!smallAndAbove ? "Private" : "Private repo >="}
+                  {!smallAndAbove ? 'Private' : 'Private repo >='}
                 </StyledPrivateRepoButton>
               )}
             </StyledCardActions>
@@ -94,7 +94,7 @@ const ProjectCard = ({ project, preview }) => {
         onModalClose={handleModalClose}
       />
     </Box>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard
