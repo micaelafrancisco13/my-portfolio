@@ -1,0 +1,399 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Fira Code', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #282C33!important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --color-text-primary: #ABB2BF;
+  --color-accent: #C778DD;
+  --color-background: #282C33;
+  --color-yt-channel-background: #3a404a;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+blockquote {
+  margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+  object-fit: contain;
+}
+
+.offset-section {
+  scroll-margin-top: 64px; 
+}
+
+.active-anchor-link {
+  color: white;
+}
+
+.navbar-link:link {
+  color: var(--color-text-primary);
+}
+
+.navbar-link:visited {
+  color: var(--color-text-primary);
+}
+
+.navbar-link:hover {
+  color: white;
+}
+
+.navbar-link:active {
+  color: white;
+}
+
+.accent-text {
+  color: var(--color-accent);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: show;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex-y {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-x-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-y-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-self-x-end {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* hero */
+.hero-block {
+  margin-top: 4.8rem;
+  margin-bottom: 10rem;
+}
+
+.socials-container {
+  position: absolute;
+  bottom: 0;
+}
+
+.side-links {
+  position: absolute;
+  top: 0;
+  left: 1.7rem;
+}
+
+.side-links-container {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.info-text {
+  margin: 2.5rem 0;
+}
+
+.my-photo-container {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.working-on-inner-container > div {
+  border: 1px solid var(--color-text-primary);
+  padding: 0.8rem;
+}
+
+.square-bullet {
+  width: 16px;
+  height: 16px;
+  background: var(--color-accent);
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .info-text {
+    margin: 3.2rem 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-block {
+    margin-bottom: 12rem;
+  }
+
+  .my-photo-container {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+  .working-on-container {
+    text-align: center;
+  }
+
+  .working-on-inner-container {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+/* quote */
+.quote-block {
+  margin-bottom: 10rem;
+}
+
+.figure-quote {
+  border: 1px solid var(--color-text-primary);
+  position: relative;
+}
+
+.block-quote {
+  padding: 3.2rem;
+}
+
+.quote-by-container {
+  padding: 0.8rem;
+  border: 1px solid var(--color-text-primary);
+  border-top: none;
+  display: inline-block;
+  width: auto;
+}
+
+.figure-quote::before, .figure-quote::after {
+  content: '"';
+  position: absolute;
+  font-size: 64px;
+  font-weight: 700;
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-image: linear-gradient(var(--color-background), var(--color-background));
+}
+
+.figure-quote::before {
+  top: -1px;
+  left: 10px;
+}
+
+.figure-quote::after {
+  bottom: -25px;
+  right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .quote-block {
+    margin-bottom: 12rem;
+  }
+
+  .figure-quote {
+    max-width: 730px;
+  }
+}
+
+/* project card */
+.tech-stacks-container {
+  border-bottom: 1px solid var(--color-text-primary);
+  border-top: 1px solid var(--color-text-primary);
+  gap: 0.8rem 1.6rem;
+  padding: 0.8rem;
+}
+
+.project-details-container {
+  padding: 1.6rem;
+}
+
+/* iframe video */
+.video-container {
+  margin: 2rem 0;
+}
+
+.iframe {
+ aspect-ratio: 16 / 9;
+ width: 100%;
+}
+
+/* tech stack icons */
+.nodejs-icon-container {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 0 0.2rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media screen and (min-width: 640px) {
+  .iframe {
+    width: 95%;
+   }
+}
+
+@media screen and (min-width: 768px) {
+  .iframe {
+    width: 90%;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+  .iframe {
+    width: 80%;
+   }
+}
+
+@media screen and (min-width: 1280px) {
+  .iframe {
+    width: 85%;
+   }
+}
+
+/* about me */
+.yt-channel-container {
+  border-radius: 2.4rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--color-yt-channel-background);
+}
+
+.yt-channel-avatar {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+/* animations */
+.zoom {
+  transition: transform 0.65s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+
+.typed-container {
+  display: inline-block;
+}
+
+.typed-out {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 3s;
+  animation-timing-function: steps(50, end);
+  animation-fill-mode: forwards;
+}
+  
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.digital-art-borealis {
+  border-radius: 2.5rem;
+}
+
+/* footer */
+.footer-block {
+  display: flex;
+  flex-direction: column;
+}
+
+/* spinner */
+
+@media screen and (min-width: 1024px) {
+  .footer-block {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.loader:before , .loader:after{
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.loader:after {
+  box-shadow: 0 2px 0 var(--color-accent) inset;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {  transform: rotate(0)}
+  100% { transform: rotate(360deg)}
+}
