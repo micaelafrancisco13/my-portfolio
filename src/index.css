@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+::selection {
+	background-color: #f7e19f;
+	color: black;
+}
+
 body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Fira Code', 'Segoe UI',
