@@ -9,31 +9,31 @@ const DotsBox = ({ large }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx={2} cy={2} r={2} fill="#ABB2BF" />
-      <circle cx={16.75} cy={2} r={2} fill="#ABB2BF" />
-      <circle cx={31.5} cy={2} r={2} fill="#ABB2BF" />
-      <circle cx={46.25} cy={2} r={2} fill="#ABB2BF" />
-      <circle cx={61} cy={2} r={2} fill="#ABB2BF" />
-      <circle cx={2} cy={16.75} r={2} fill="#ABB2BF" />
-      <circle cx={16.75} cy={16.75} r={2} fill="#ABB2BF" />
-      <circle cx={31.5} cy={16.75} r={2} fill="#ABB2BF" />
-      <circle cx={46.25} cy={16.75} r={2} fill="#ABB2BF" />
-      <circle cx={61} cy={16.75} r={2} fill="#ABB2BF" />
-      <circle cx={2} cy={31.5} r={2} fill="#ABB2BF" />
-      <circle cx={16.75} cy={31.5} r={2} fill="#ABB2BF" />
-      <circle cx={31.5} cy={31.5} r={2} fill="#ABB2BF" />
-      <circle cx={46.25} cy={31.5} r={2} fill="#ABB2BF" />
-      <circle cx={61} cy={31.5} r={2} fill="#ABB2BF" />
-      <circle cx={2} cy={46.25} r={2} fill="#ABB2BF" />
-      <circle cx={16.75} cy={46.25} r={2} fill="#ABB2BF" />
-      <circle cx={31.5} cy={46.25} r={2} fill="#ABB2BF" />
-      <circle cx={46.25} cy={46.25} r={2} fill="#ABB2BF" />
-      <circle cx={61} cy={46.25} r={2} fill="#ABB2BF" />
-      <circle cx={2} cy={61} r={2} fill="#ABB2BF" />
-      <circle cx={16.75} cy={61} r={2} fill="#ABB2BF" />
-      <circle cx={31.5} cy={61} r={2} fill="#ABB2BF" />
-      <circle cx={46.25} cy={61} r={2} fill="#ABB2BF" />
-      <circle cx={61} cy={61} r={2} fill="#ABB2BF" />
+      <circle cx={2} cy={2} r={2} fill="#D5DBDE" />
+      <circle cx={16.75} cy={2} r={2} fill="#D5DBDE" />
+      <circle cx={31.5} cy={2} r={2} fill="#D5DBDE" />
+      <circle cx={46.25} cy={2} r={2} fill="#D5DBDE" />
+      <circle cx={61} cy={2} r={2} fill="#D5DBDE" />
+      <circle cx={2} cy={16.75} r={2} fill="#D5DBDE" />
+      <circle cx={16.75} cy={16.75} r={2} fill="#D5DBDE" />
+      <circle cx={31.5} cy={16.75} r={2} fill="#D5DBDE" />
+      <circle cx={46.25} cy={16.75} r={2} fill="#D5DBDE" />
+      <circle cx={61} cy={16.75} r={2} fill="#D5DBDE" />
+      <circle cx={2} cy={31.5} r={2} fill="#D5DBDE" />
+      <circle cx={16.75} cy={31.5} r={2} fill="#D5DBDE" />
+      <circle cx={31.5} cy={31.5} r={2} fill="#D5DBDE" />
+      <circle cx={46.25} cy={31.5} r={2} fill="#D5DBDE" />
+      <circle cx={61} cy={31.5} r={2} fill="#D5DBDE" />
+      <circle cx={2} cy={46.25} r={2} fill="#D5DBDE" />
+      <circle cx={16.75} cy={46.25} r={2} fill="#D5DBDE" />
+      <circle cx={31.5} cy={46.25} r={2} fill="#D5DBDE" />
+      <circle cx={46.25} cy={46.25} r={2} fill="#D5DBDE" />
+      <circle cx={61} cy={46.25} r={2} fill="#D5DBDE" />
+      <circle cx={2} cy={61} r={2} fill="#D5DBDE" />
+      <circle cx={16.75} cy={61} r={2} fill="#D5DBDE" />
+      <circle cx={31.5} cy={61} r={2} fill="#D5DBDE" />
+      <circle cx={46.25} cy={61} r={2} fill="#D5DBDE" />
+      <circle cx={61} cy={61} r={2} fill="#D5DBDE" />
     </svg>
   );
 };
