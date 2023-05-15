@@ -13,7 +13,7 @@ export const projectDetails = [
         techStacks: ['Vanilla HTML', 'Vanilla CSS'],
         videoId: 'CwVRfTM6KmI',
         live: 'https://bella-olonje-ela.vercel.app/',
-        github: 'https://github.com/elaaa13/IT-304-midterm/tree/main',
+        github: 'https://github.com/micaelafrancisco13/IT-304-midterm/tree/main',
     },
     {
         name: 'Get Done',
@@ -22,7 +22,7 @@ export const projectDetails = [
         techStacks: ['React', 'Material UI'],
         videoId: 'xdLHRdQl1JU',
         live: 'https://get-done-ela.vercel.app/',
-        github: 'https://github.com/elaaa13/get-done/tree/main',
+        github: 'https://github.com/micaelafrancisco13/get-done/tree/main',
     },
     {
         name: 'Lucky Prints',
@@ -52,7 +52,7 @@ const otherProjects = [
         description: 'DOM manipulated authentication validation',
         techStacks: ['Vanilla HTML', 'Vanilla CSS', 'Vanilla JavaScript'],
         live: 'https://ela304login-interface.vercel.app/',
-        github: 'https://github.com/elaaa13/IT-304-final-exam-login-interface/tree/main',
+        github: 'https://github.com/micaelafrancisco13/IT-304-final-exam-login-interface/tree/main',
     },
     {
         name: "Simple portfolio's landing page",
@@ -60,7 +60,7 @@ const otherProjects = [
         description: 'Yet another landing page',
         techStacks: ['Vanilla HTML', 'Vanilla CSS'],
         live: 'https://ela304portfolio.vercel.app/',
-        github: 'https://github.com/elaaa13/IT-304-final-exam-portfolio/tree/main',
+        github: 'https://github.com/micaelafrancisco13/IT-304-final-exam-portfolio/tree/main',
     },
     {
         name: 'useForm custom hook',
@@ -68,13 +68,13 @@ const otherProjects = [
         description: 'Reusable custom hook for forms',
         techStacks: ['React', 'Material UI', 'Joi'],
         live: 'https://use-form-ela.vercel.app/',
-        github: 'https://github.com/elaaa13/useForm-custom-hook/tree/main',
+        github: 'https://github.com/micaelafrancisco13/useForm-custom-hook/tree/main',
     },
     {
         name: 'Java swing desktop ordering app',
         description: 'Final requirement for our Java subject',
         techStacks: ['Java', 'Java Swing', 'MySQL'],
-        github: 'https://github.com/elaaa13/Java-swing-web-like-ordering-app',
+        github: 'https://github.com/micaelafrancisco13/Java-swing-web-like-ordering-app',
     },
 ]
 
