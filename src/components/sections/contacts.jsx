@@ -32,8 +32,8 @@ function getSocials(largeAndLarger) {
       buttonTitle: 'Email address',
       text: !largeAndLarger
       // micaelafrancisco13@gmail.com
-        ? `micaelafrancisco13\n.s@gmail.com`
-        : `micaelafrancisco13.s@gmail.com`,
+        ? `micaelafrancisco13\n@gmail.com`
+        : `micaelafrancisco13@gmail.com`,
       timeout: INITIAL_TIMEOUT * 3,
     },
   ]
