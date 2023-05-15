@@ -27,12 +27,13 @@ function getSocials(largeAndLarger) {
     },
     {
       name: 'email',
-      link: 'mailto:micaela.francisco.s@bulsu.edu.ph',
+      link: 'mailto:micaelafrancisco13@gmail.com',
       linkTitle: `Developer's email address`,
       buttonTitle: 'Email address',
       text: !largeAndLarger
-        ? `micaela.francisco\n.s@bulsu.edu.ph`
-        : `micaela.francisco.s@bulsu.edu.ph`,
+      // micaelafrancisco13@gmail.com
+        ? `micaelafrancisco13\n.s@gmail.com`
+        : `micaelafrancisco13.s@gmail.com`,
       timeout: INITIAL_TIMEOUT * 3,
     },
   ]
