@@ -52,7 +52,7 @@ const DrawerContent = ({ onHandleDrawerClose }) => {
       <Box className="flex flex-center">
         <Socials
           social="github"
-          link="https://github.com/elaaa13?tab=repositories"
+          link="https://github.com/micaelafrancisco13?tab=repositories"
           linkTitle={`Developer's GitHub link`}
           buttonTitle="GitHub"
         />
@@ -64,7 +64,7 @@ const DrawerContent = ({ onHandleDrawerClose }) => {
         />
         <Socials
           social="email"
-          link="mailto:micaela.francisco.s@bulsu.edu.ph"
+          link="mailto:micaelafrancisco13@gmail.com"
           linkTitle={`Developer's email address`}
           buttonTitle="Email address"
         />
