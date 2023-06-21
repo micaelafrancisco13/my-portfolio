@@ -7,10 +7,10 @@ const TypeScriptIcon = () => {
       width="20"
       height="20"
       fill="none"
-      viewBox="0 0 20 20"
+      viewBox="0 0 512 512"
     >
-      <rect width="20" height="20" fill="#3178c6" rx="50"></rect>
-      <rect width="20" height="20" fill="#3178c6" rx="50"></rect>
+      <rect width="512" height="512" fill="#3178c6" rx="50"></rect>
+      <rect width="512" height="512" fill="#3178c6" rx="50"></rect>
       <path
         fill="#fff"
         fillRule="evenodd"

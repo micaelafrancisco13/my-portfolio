@@ -1,5 +1,7 @@
 import BootstrapIcon from "../components/icons/svg/bootstrap-svg";
 import MongooseIcon from "../components/icons/svg/mongoose-svg";
+import SpringIcon from "../components/icons/svg/spring-svg";
+import TypeScriptIcon from "../components/icons/svg/typescript-svg";
 import AdobeXDIcon from "./../components/icons/svg/adobe-xd-svg";
 import CSS3Icon from "./../components/icons/svg/css3-svg";
 import ExpressJSIcon from "./../components/icons/svg/express-svg";
@@ -61,6 +63,7 @@ const techStacks = [
     category: "Programming languages",
     stacks: [
       { name: "JavaScript", icon: <JavaScriptIcon /> },
+      { name: "TypeScript", icon: <TypeScriptIcon /> },
       { name: "Java", icon: <JavaIcon /> },
     ],
     inLayout: 2,
@@ -72,7 +75,10 @@ const techStacks = [
       { name: "React", icon: <ReactJSIcon /> },
       { name: "Express", icon: <ExpressJSIcon /> },
       { name: "Mongoose", icon: <MongooseIcon /> },
-      { name: "Node.js", icon: <NodeJSIcon /> },
+      {
+        name: "Spring (used in internship)",
+        icon: <SpringIcon />,
+      },
     ],
     inLayout: 5,
     showPriority: 3,
@@ -85,6 +91,7 @@ const techStacks = [
       { name: "Bootstrap", icon: <BootstrapIcon /> },
       { name: "Material UI", icon: <MUIIcon /> },
       { name: "Styled components", icon: <StyledComponentsIcon /> },
+      { name: "Node.js", icon: <NodeJSIcon /> },
     ],
     inLayout: 6,
     showPriority: 6,
