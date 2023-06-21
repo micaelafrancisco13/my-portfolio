@@ -41,10 +41,10 @@ const TechStacks = ({ techStackRef }) => {
           fontWeight="500"
           mb={{ xs: '1.3rem', lg: 0 }}
           className="offset-section"
-          id="tech-stacks"
+          id="tech-stack"
           ref={techStackRef}
         >
-          <span style={{ color: theme.palette.accent.main }}>#</span>tech-stacks
+          <span style={{ color: theme.palette.accent.main }}>#</span>tech-stack
         </Typography>
         {smallAndLarger && <StyledLine />}
       </Box>
