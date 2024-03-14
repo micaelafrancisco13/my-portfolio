@@ -1,6 +1,7 @@
 import Bella_Olonje from '../images/project-screenshots/bella-olonje.png'
 import Get_Done from '../images/project-screenshots/get-done.png'
 import Lucky_Prints from '../images/project-screenshots/lucky-prints.png'
+import Noteify from '../images/project-screenshots/noteify.png'
 import Login_UI from '../images/project-screenshots/login-ui.png'
 import Sample_portfolio from '../images/project-screenshots/sample-portfolio.png'
 import useForm_hook from '../images/project-screenshots/useForm-hook.png'
@@ -41,11 +42,27 @@ export const projectDetails = [
         ],
         videoId: 'aCqTLipiQso',
         live: 'https://luckyprints.vercel.app/',
+        github: 'https://github.com/micaelafrancisco13/lucky-prints-api-node',
     },
 ]
 
 // doesn't need preview
 const otherProjects = [
+    {
+        name: 'Noteify',
+        screenshot: Noteify,
+        description: 'Full-stack stack to-do app',
+        techStacks: [
+            'MongoDB',
+            'Express',
+            'React',
+            'TypeScript',
+            'Node.js',
+            'Zod',
+            'Material UI',
+        ],
+        live: 'https://noteify-by-ela.vercel.app/',
+    },
     {
         name: 'Simple login page',
         screenshot: Login_UI,
