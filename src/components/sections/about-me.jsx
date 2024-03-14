@@ -60,11 +60,10 @@ const AboutMe = ({ aboutMeRef }) => {
       >
         <Grid item xs={12} md={7}>
           <Typography>
-            Hi, I'm Ela! A 4th year undergraduate IT student at Bulacan State
-            University. With my passion for technology and love for learning, I
-            always strive to keep up with the latest trends. Below are some of
-            my favorite tech-related YouTube channels - I enjoy watching them
-            all, they're a must-see!
+            Hi, I'm Ela! A fresh graduate web developer from Bulacan State University.
+            With my passion for technology and love for learning, I always strive to
+            keep up with the latest trends. Below are some of my favorite tech-related
+            YouTube channels—I enjoy watching them all, they're a must-see!
             {/* I have experience in HTML, CSS, JavaScript, and web
             development libraries and frameworks such as React and Express.
             Although I am well-versed in web development, I am currently looking
