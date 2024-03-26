@@ -40,7 +40,7 @@ const Footer = () => {
           </Typography>
           <Socials
             social="facebook"
-            link="https://www.facebook.com/micaelafrancisco13/"
+            link="https://www.facebook.com/"
             linkTitle={`Developer's Facebook link`}
             buttonTitle="Facebook"
           />
