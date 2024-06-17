@@ -20,6 +20,7 @@ import StyledComponentsIcon from "./../components/icons/svg/styled-components-sv
 import VirtualBoxIcon from "./../components/icons/svg/virtual-box-svg";
 import VSCodeIcon from "./../components/icons/svg/vscode-svg";
 import WindowsServerIcon from "./../components/icons/svg/windows-server-svg";
+import DockerMarkWhite from "../components/icons/svg/docker-mark-white";
 
 const techStacks = [
   {
@@ -51,6 +52,7 @@ const techStacks = [
     stacks: [
       { name: "Git", icon: <GitIcon /> },
       { name: "VSCode", icon: <VSCodeIcon /> },
+      { name: "Docker", icon: <DockerMarkWhite /> },
       { name: "Postman", icon: <PostmanIcon /> },
       { name: "Adobe XD", icon: <AdobeXDIcon /> },
       { name: "IntelliJ IDEA", icon: <IntelliJIcon /> },
